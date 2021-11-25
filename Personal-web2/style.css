@@ -1,0 +1,259 @@
+/*Background*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/MainBackground2.webp);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+/*navbar*/
+
+body {
+    background-color: rgb(69, 88, 102);
+}
+
+.Navbar {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.Logo {
+    cursor: pointer;
+}
+
+.Navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.Navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.Navbar ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(170, 48, 27);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.Navbar ul li:hover::after {
+    width: 100%;
+}
+
+
+/*Home page */
+
+.HomePage h1 {
+    color: blanchedalmond;
+}
+
+.HomePage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.layer {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.layer center {
+    color: rgb(35, 12, 78);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+
+/*Projects*/
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project1 {
+    flex-basis: 30%;
+    background: rgb(96, 102, 114);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/*About section / who am i */
+
+.aboutsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.whoami {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-style: dotted;
+    border-color: black;
+    border-radius: 20px;
+    color: white;
+}
+
+.education {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-style: dotted;
+    border-color: black;
+    border-radius: 20px;
+    color: white;
+}
+
+.whoami img {
+    width: 300px;
+    border-style: groove;
+    border-radius: 10px;
+    border-width: 40px;
+}
+
+.education img {
+    width: 300px;
+    border-style: groove;
+    border-radius: 10px;
+    border-width: 40px;
+}
+
+.container {
+    text-align: center;
+}
+
+
+/*Home page- skills section*/
+
+
+/*Footer*/
+
+
+/*toggle button*/
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+    }
+    .Navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links li {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+        width: 100%;
+    }
+}
+
+
+/*Media query*/
+
+@media all and (max-width: 500px) {
+    .Navbar img {
+        width: 50px;
+    }
+    .HomePage h1 {
+        font-size: 25px;
+    }
+    .HomePage img {
+        width: 120px;
+    }
+    .aboutSection img {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .aboutSection p {
+        font-size: 10px;
+    }
+    .whoami {
+        display: flex;
+        flex-direction: column;
+    }
+    .education p {
+        font-size: 10;
+    }
+    .education {
+        display: flex;
+        flex-direction: column;
+    }
+    .skills img {
+        width: 350px;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .whoami {
+        padding: 5px;
+    }
+}
